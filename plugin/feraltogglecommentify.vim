@@ -884,7 +884,7 @@ endfunction
 
 "if !hasmapto('<Plug>FtcTc') && mapcheck("<M-c>", "nvi") == ""
 if !hasmapto('<Plug>FtcTc')
-	nmap <unique>	<M-c>	<Plug>FtcTc
+	"nmap <unique>	<M-c>	<Plug>FtcTc
 	vmap <unique>	<M-c>	<Plug>FtcTc
 	imap <unique>	<M-c>	<esc><Plug>FtcTc
 endif
@@ -894,7 +894,7 @@ noremap <unique> <script> <Plug>FtcTc  :TC<CR>j
 
 :command -nargs=? -range DLAC		:let b:FTCSaveCol = virtcol('.')|<line1>,<line2>call <SID>DLAC(<f-args>)
 if !hasmapto('<Plug>FtcDLAC')
-	nmap <unique>	<C-c>	<Plug>FtcDLAC
+	"nmap <unique>	<C-c>	<Plug>FtcDLAC
 	vmap <unique>	<C-c>	<Plug>FtcDLAC
 " [Feral:194/03@07:08] Collision, See: <URL:VIMHELP:i_CTRL-C>
 "	imap <unique>	<C-c>	<esc><Plug>FtcDLAC
