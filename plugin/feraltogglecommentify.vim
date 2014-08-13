@@ -215,6 +215,12 @@ function s:FindCommentify() " {{{
 	elseif fileType == 'c' || fileType == "css"
 		let commentSymbol_L = '/*'
 		let commentSymbol_R = '*/'
+	elseif fileType == 'stata'
+		let commentSymbol_L = '/*'
+		let commentSymbol_R = '*/'
+	elseif fileType == 'autohotkey'
+		let commentSymbol_L = ';'
+		let commentSymbol_R = ''
 	elseif fileType == 'vim'
 		let commentSymbol_L = '"'
 		let commentSymbol_R = ''
