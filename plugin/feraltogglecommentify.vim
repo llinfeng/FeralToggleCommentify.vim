@@ -216,13 +216,8 @@ function s:FindCommentify() " {{{
 		let commentSymbol_L = '/*'
 		let commentSymbol_R = '*/'
 	elseif fileType == 'stata'
-<<<<<<< HEAD
 		let commentSymbol_L = '/*'
 		let commentSymbol_R = '*/'
-=======
-		let commentSymbol_L = '// '
-		let commentSymbol_R = ''
->>>>>>> origin/master
 	elseif fileType == 'matlab'
 		let commentSymbol_L = '%'
 		let commentSymbol_R = ''
