@@ -1,3 +1,15 @@
+## New solution to commenting
+Refer to our beloved tpope for help: https://github.com/tpope/vim-commentary
+
+* To customize the way you comment, use the following:
+````
+autocmd BufRead,BufNewFile *.do setlocal commentstring=*\ %s
+````
+Note, the character/string that comments, in my example, is `*`; and you need to
+keep the remaining `\ %s` as they are. [Not sure about the syntax, but this is
+what has been working upon trial-and-error.]
+
+## Intro to the Plugin
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=665
 
 This script offers simple, basic, line oriented commenting of files.
